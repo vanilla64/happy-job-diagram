@@ -1,0 +1,23 @@
+/*@font-face {*/
+/*  font-family: 'Arial';*/
+/*  font-style:  normal;*/
+/*  font-weight: 400;*/
+/*  font-display: swap;*/
+/*  src: url('./ArialMT.woff') format('woff');*/
+/*}*/
+
+@font-face {
+  font-family: 'Gotham';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./GothamPro.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-style:  normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('./GothamPro-Light.woff') format('woff');
+}

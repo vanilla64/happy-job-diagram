@@ -5,9 +5,32 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./index.css">
   <title>Happy Job Diagram</title>
 </head>
-<body>
-
+<body class="root">
+  <section class="diagram">
+    <object class="diagram__loyalty-icon" data="images/loyalty.svg" type="image/svg+xml"></object>
+    <svg class="diagram__chart" width="230" height="230" viewBox="0 0 34 34">
+      <circle class="diagram__unit diagram__unit_color_transparent" r="15.9" cx="50%" cy="50%"></circle>
+      <circle class="diagram__unit diagram__unit_color_red" r="15.9" cx="50%" cy="50%"></circle>
+      <circle class="diagram__unit diagram__unit_color_green" r="15.9" cx="50%" cy="50%"></circle>
+      <circle class="diagram__unit diagram__unit_color_yellow" r="15.9" cx="50%" cy="50%"></circle>
+    </svg>
+    <div class="diagram__text-container">
+      <div class="diagram__percents">
+        <div class="diagram__digits-container">
+          <p class="diagram__integer">72<span class="diagram__decimal">.7</span></p>
+        </div>
+      </div>
+      <h3 class="diagram__title">Лояльность</h3>
+      <p class="diagram__heading">ниже среднего</p>
+      <p class="diagram__text">
+        по отрасли: FMCG
+        значений&nbsp;слева&nbsp;от&nbsp;медианы
+        <span class="diagram__text_size_large">52.0% - 83.1%</span>
+      </p>
+    </div>
+  </section>
 </body>
 </html>
