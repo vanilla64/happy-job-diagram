@@ -147,6 +147,161 @@
   line-height: 16px;
 }
 
+.diagram__rate {
+  width: 44px;
+  margin: 6px 0 0;
+  display: flex;
+  height: 20px;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(9px);
+}
+
+.diagram__triangle,
+.diagram__triangle:before,
+.diagram__triangle:after {
+  border-bottom: 1px solid #70a74b;
+}
+
+.diagram__triangle {
+  position: relative;
+  width: 0;
+  height: 0;
+  transform: translateY(-2px);
+  border-style: solid;
+  border-width: 0 8px 9px 8px;
+  border-color: transparent transparent #70a74b transparent;
+}
+
+.diagram__dinamic-rating {
+  margin: 0;
+  font-family: 'Arial';
+  color: #70a74b;
+}
+
+.diagram__list {
+  margin: 80px 0 0;
+  padding: 0;
+  list-style-type: none;
+  width: 228px;
+  transform: translateX(9px);
+}
+
+.diagram__list-item {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Arial';
+  margin: 0 0 14px;
+}
+
+.diagram__list-item:last-child {
+  margin: 0;
+}
+
+.diagram__col_left {
+  display: flex;
+  width: 127px;
+  justify-content: space-between;
+}
+
+.diagram__parameter {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.diagram__list-item-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(3px);
+}
+
+.diagram__list-top-row {
+  font-size: 12px;
+  color: #555;
+}
+
+.diagram__list-btm-row {
+  padding: 0 0 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.diagram__people-count {
+  color: #9d9d9c;
+  font-size: 12px;
+}
+
+.diagram__people-icon {
+  margin: 0 0 0 4px;
+  width: 12px;
+  height: 12px;
+  transform: translate(-1px, -1px);
+}
+
+.diagram__col_right {
+  width: 88px;
+  height: 32px;
+  border: solid 1px #e7e7e7;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.diagram__big-line {
+  height: 80%;
+  transition: 3s;
+}
+
+.diagram__big-line_color_green {
+  width: 0%;
+  background: #70a74b;
+  transition: 3s;
+}
+
+.diagram__big-line_color_yellow {
+  width: 0%;
+  background: #fbd229;
+}
+
+.diagram__big-line_color_red {
+  width: 0%;
+  background: #ed5243;
+}
+
+.diagram__small-line {
+  height: 21%;
+  transition: 3s;
+}
+
+.diagram__small-line_color_green {
+  width: 0%;
+  background: #b5d0a2;
+}
+
+.diagram__small-line_color_yellow {
+  width: 0%;
+  background: #fae691;
+}
+
+.diagram__small-line_color_red {
+  width: 0%;
+  background: #f3a69e;
+}
+
+.diagram__dinamic-percent {
+  font-size: 12px;
+  color: #5d5d5d;
+  position: absolute;
+  top: calc( 50% - 6px );
+  right: 5px;
+}
+
+/* В качесте примера анимация реализована на keyframes */
+/* Для анимации линий в статистике использован js */
+
 @keyframes yellow-path {
   from {
     stroke-dasharray: 0 100;
