@@ -20,6 +20,12 @@
   position: relative;
 }
 
+.diagram__line {
+  position: absolute;
+  top: 148px;
+  left: 16px;
+}
+
 .diagram__loyalty-icon {
   margin: 13px 0 0;
   width: 56px;
@@ -30,6 +36,7 @@
 .diagram__chart {
   position: absolute;
   top: 40px;
+  z-index: 5;
   transform: rotate(-105deg) translateY(10px);
 }
 
